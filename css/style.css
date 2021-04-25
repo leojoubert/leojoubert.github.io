@@ -1,0 +1,285 @@
+body {
+  font-family: Courier, sans-serif;
+}
+
+header {
+  height: 100vh;
+  background-color: #393939;
+  color: white;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  height: 80vh;
+}
+
+.element-header {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+
+
+
+header .icones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 3em;
+  line-height: 20vh;
+  height: 20vh;
+}
+
+header .avatar img {
+  border-radius: 30px;
+  max-height: 60vh;
+  filter: grayscale(100%);
+}
+
+
+header .nom {
+  font-family: Impact, fantasy;
+  font-size: 3em;
+}
+
+header .description {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+
+main a {
+  text-decoration: none;
+  color: #265178;
+}
+
+main a:hover {
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 5em;
+
+}
+
+.gris {
+  background-color: lightgrey;
+}
+
+.titre {
+  flex-basis: 30%;
+  font-family: Impact, fantasy;
+  font-size: 2em;
+  text-align: center;
+}
+
+.elements {
+  flex-basis: 70%;
+}
+
+.reference {
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.auteur {
+  font-variant:small-caps;
+}
+
+.nom-jury {
+  font-variant:small-caps;
+}
+
+.fonction-jury {
+  font-style: italic;
+}
+
+.titre-publi {
+  font-style: italic;
+}
+
+.type {
+  font-style: italic;
+}
+
+.modal {
+  max-width: 1200px;
+}
+
+.tabs {
+  height:50px;
+  width: 100%em;
+  display: flex;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  margin-bottom: 40px;
+}
+
+.tab-first {
+  border-left-width: 1px;
+  border-left-style: dashed;
+  border-left-color: black;
+}
+
+.tab {
+  width: 33.33333%;
+  border-right-width: 1px;
+  border-right-style: dashed;
+  border-right-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab > span {
+  line-height: 50px;
+}
+
+.tab-active {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  font-weight: bold;
+}
+
+.intitule-projet {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.tab-content > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab-content > ul > li {
+  margin-bottom: 30px;
+}
+
+.footer {
+  height:100px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.footer span {
+  line-height: 100px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-height: 600px) {
+
+  .description .avatar {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  html {
+    font-size: 0.8em;
+  }
+
+  .container {
+    flex-direction: column;
+    padding-left: 3em;
+  }
+  .titre {
+    flex-basis: auto;
+    margin-bottom: 1em;
+  }
+  .elements {
+    flex-basis: auto;
+  }
+  .liens-mobile, .intitule-projet, .tab-content {
+    display: block !important;
+  }
+
+  .themes, .resume, .liens, .detail-jury, .tabs {
+    display: none;
+  }
+
+  .description, .nom {
+    margin-top: 50px;
+  }
+
+  header .nom {
+    font-size: 2em;
+  }
+
+  .container-header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  header .avatar img {
+    max-height: 275px;
+  }
+
+  .element-header {
+    display: block;
+  }
+
+  .publications > .resume {
+    display: none;
+  }
+  .publications > .elements {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 1024px) and (min-height: 1000px){
+  html {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .liens-mobile, .intitule-projet {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  header .avatar img {
+    max-height: 200px;
+  }
+
+}
