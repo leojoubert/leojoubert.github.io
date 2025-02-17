@@ -140,7 +140,7 @@ main a:hover {
 }
 
 .tab {
-  width: 33.33333%;
+  width: 50%;
   border-right-width: 1px;
   border-right-style: dashed;
   border-right-color: black;
