@@ -54,8 +54,8 @@ export default defineConfig({
     resolve: {
       alias: {
         // Pointe vers le dossier img à la racine du dépôt
-        '@img': path.resolve(__dirname, '../../img'),
-        '@file': path.resolve(__dirname, '../../file'),
+        '@img': path.resolve(__dirname, '../img'),
+        '@file': path.resolve(__dirname, '../file'),
       },
     },
     server: {
