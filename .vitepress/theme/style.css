@@ -1,0 +1,355 @@
+/* Largeur du contenu */
+:root {
+  --vp-layout-max-width: 1280px;
+  --vp-nav-logo-height: 28px;
+}
+
+.VPNavBarTitle .title {
+  font-size: 1.30rem;
+  font-weight: 700;
+}
+
+.VPDoc .content-container {
+  max-width: 1032px !important;
+}
+
+/* Couleurs de la marque */
+:root {
+  --vp-c-brand-1: #265178;
+  --vp-c-brand-2: #1e3f5e;
+  --vp-c-brand-3: #173246;
+  --vp-c-brand-soft: rgba(38, 81, 120, 0.1);
+}
+
+/* ─── Page d'accueil ─────────────────────────────────────────────── */
+
+.home-profile {
+  display: flex;
+  gap: 3.5rem;
+  max-width: 860px;
+  margin: 5rem auto;
+  padding: 0 1.5rem;
+  align-items: flex-start;
+}
+
+.profile-sidebar {
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-avatar {
+  width: 180px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.profile-social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.social-link i {
+  width: 1.1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* ─── Contenu du profil ─────────────────────────────────────────── */
+
+.profile-content {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.profile-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  border: none;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.profile-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin: 0 0 0.6rem;
+  line-height: 1.3;
+}
+
+.profile-affiliations {
+  margin: 0 0 1.2rem;
+}
+
+.profile-institution {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  letter-spacing: 0.04em;
+}
+
+.profile-affiliations a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+
+.profile-affiliations a:hover {
+  text-decoration: underline;
+}
+
+.profile-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.2rem;
+}
+
+.profile-theme-tag {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 25%, transparent);
+  border-radius: 2em;
+  padding: 0.25em 0.85em;
+  white-space: nowrap;
+}
+
+.profile-bio {
+  color: var(--vp-c-text-1);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+
+.profile-bio + .profile-bio {
+  margin-top: 0.8rem;
+}
+
+/* ─── PublicationCard ────────────────────────────────────────────── */
+
+.pub-card {
+  border-left: 3px solid var(--vp-c-brand-1);
+  padding: 1.2rem 0 1.2rem 1.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.pub-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-year {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  letter-spacing: 0.03em;
+}
+
+.pub-status {
+  font-size: 0.75rem;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 3px;
+  padding: 0.1em 0.5em;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 0.4rem;
+  color: var(--vp-c-text-1);
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  margin: 0 0 0.25rem;
+}
+
+.pub-journal {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--vp-c-text-2);
+  margin: 0 0 0.6rem;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.pub-links a {
+  font-size: 0.85rem;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 4px;
+  padding: 0.15em 0.6em;
+  transition: background 0.15s, color 0.15s;
+}
+
+.pub-links a:hover {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+}
+
+.pub-abstract {
+  margin-top: 0.3rem;
+}
+
+.pub-abstract summary {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pub-abstract summary::before {
+  content: '▶';
+  font-size: 0.6rem;
+  transition: transform 0.2s;
+}
+
+.pub-abstract[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.pub-abstract > p,
+.pub-abstract > div {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  padding-left: 0.2rem;
+}
+
+/* Note intro publications */
+.pub-intro-note {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  margin-bottom: 2.5rem;
+  padding: 0.8rem 1rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 6px;
+}
+
+.pub-intro-note a {
+  color: var(--vp-c-brand-1);
+}
+
+/* ─── Métadonnées de projet ──────────────────────────────────────── */
+
+.proj-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.2rem 1.2rem;
+  margin: 0.6rem 0 1rem;
+  font-size: 0.88rem;
+}
+
+.proj-meta dt {
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  white-space: nowrap;
+}
+
+.proj-meta dd {
+  margin: 0;
+  color: var(--vp-c-text-1);
+}
+
+/* ─── Titres de publications ─────────────────────────────────────── */
+
+.vp-doc cite {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ─── Pages intérieures ─────────────────────────────────────────── */
+
+.vp-doc .auteur {
+  font-variant: small-caps;
+}
+
+.vp-doc .titre-publi {
+  font-style: italic;
+}
+
+.vp-doc .type-publi {
+  font-style: italic;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+}
+
+.vp-doc .jury-table td:first-child {
+  font-variant: small-caps;
+  white-space: nowrap;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .home-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2.5rem auto;
+  }
+
+  .profile-sidebar {
+    flex: unset;
+    width: 100%;
+  }
+
+  .profile-social {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-link span {
+    display: none;
+  }
+
+  .social-link i {
+    font-size: 1.5rem;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+  }
+}
